@@ -1,6 +1,6 @@
 # This code is contributed by Mayank Khanna
 # Python program for implementation of MergeSort
-def mergeSort(arr):
+def merge_sort(arr):
     if len(arr) > 1:
  
          # Finding the mid of the array
@@ -13,10 +13,10 @@ def mergeSort(arr):
         R = arr[mid:]
  
         # Sorting the first half
-        mergeSort(L)
+        merge_sort(L)
  
         # Sorting the second half
-        mergeSort(R)
+        merge_sort(R)
  
         i = j = k = 0
  
@@ -55,6 +55,6 @@ if __name__ == '__main__':
     arr = [12, 11, 13, 5, 6, 7]
     print("Given array is", end="\n")
     printList(arr)
-    mergeSort(arr)
+    merge_sort(arr)
     print("Sorted array is: ", end="\n")
     printList(arr)
